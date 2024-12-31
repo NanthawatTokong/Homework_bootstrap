@@ -1,0 +1,104 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* เพิ่มสีพื้นหลังอ่อน */
+    color: #333; /* เพิ่มสีตัวอักษร */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px;
+    background-color: #343a40; /* เพิ่มสีพื้นหลังที่เข้ม */
+}
+
+.navbar a {
+    color: #fff !important; /* เปลี่ยนสีลิงก์ให้เป็นสีขาว */
+}
+
+.navbar a:hover {
+    color: #f8f9fa !important; /* เปลี่ยนสีลิงก์เมื่อ hover เป็นสีอ่อน */
+}
+
+/* Card */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 15px; /* เพิ่มการโค้งมนให้มากขึ้น */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้การ์ด */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มการเปลี่ยนแปลงของเงา */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เมื่อ hover เพิ่มเงาให้ลึกขึ้น */
+}
+
+.card img {
+    border-top-left-radius: 15px; /* เพิ่มการโค้งมนที่มุมซ้ายบนของภาพ */
+    border-top-right-radius: 15px; /* เพิ่มการโค้งมนที่มุมขวาบนของภาพ */
+}
+
+/* Carousel Item */
+.carousel-item img {
+    object-fit: cover;
+    height: 500px;
+    border-radius: 15px; /* โค้งมนให้ภาพใน carousel */
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* เปลี่ยนพื้นหลังให้เป็นสีเข้ม */
+    color: #fff; /* สีตัวอักษรเป็นสีขาว */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0; /* เอาค่าของ margin ออก */
+}
+
+footer .social-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f8f9fa;
+    font-size: 20px;
+}
+
+footer .social-links a:hover {
+    color: #007bff; /* สีของลิงก์เมื่อ hover */
+}
+
+/* เพิ่มให้กรอบการ์ดและ navbar มีการเว้นระยะสบายตา */
+.container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* เพิ่มการตั้งค่าสำหรับ text content */
+.card-body {
+    padding: 15px;
+    text-align: center; /* ให้ข้อความในการ์ดอยู่กลาง */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600; /* ทำให้ชื่อสถานที่ดูเด่นขึ้น */
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555; /* สีตัวอักษรเน้นที่อ่านง่าย */
+}
+
+/* เพิ่มการตั้งค่าการแสดงผลที่ตอบสนอง */
+@media (max-width: 576px) {
+    .navbar a {
+        font-size: 0.9rem; /* ปรับขนาดฟอนต์ให้เล็กลงในมือถือ */
+    }
+
+    .card-title {
+        font-size: 1.1rem; /* ปรับขนาดฟอนต์ของชื่อสถานที่ */
+    }
+}
